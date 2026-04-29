@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@800;900&family=Work+Sans:wght@100;200;300;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Epilogue", sans-serif;
+
+  --color-carbono: #3D3D3D;
+  --color-ocre-solar: #F9D648;
+  --color-crema-madera: #EAE7E1;
+  --color-blanco-puro: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.text-headline-display {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 15vw, 120px);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-headline-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 48px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.text-body-lg {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.text-body-md {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-label-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
